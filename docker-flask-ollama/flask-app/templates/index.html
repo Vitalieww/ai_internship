@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Ollama Prompt</title>
+</head>
+<body>
+    <h1>Enter your prompt</h1>
+    <form method="post">
+        <input type="text" name="prompt" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if response %}
+        <h2>Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
